@@ -1,0 +1,55 @@
+/* CapiPay brand tokens. Source of truth for color and type. See docs/brand/README.md. */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Ubuntu+Mono:wght@400;700&family=Sour+Gummy:wght@600;700&display=swap");
+
+:root {
+  /* Core palette: Mandarina */
+  --capi-mandarina: #ff7a1a; /* the sun, primary actions. Never as text on crema */
+  --capi-monte: #1f4d3a; /* water, depth, verified */
+  --capi-manteca: #ffd45c; /* light on the water, highlights. Never as text */
+  --capi-tinta: #241f1a; /* text, logo */
+  --capi-crema: #fff7ec; /* ground */
+
+  /* Functional tokens: light theme */
+  --surface: var(--capi-crema);
+  --surface-raised: #ffffff;
+  --border: #eadbc8;
+  --ink: var(--capi-tinta);
+  --ink-muted: #6b5e50;
+  --brand: var(--capi-mandarina);
+  --on-brand: var(--capi-tinta);
+  --brand-text: #b84a00; /* orange that passes 4.5:1 on crema */
+  --success: var(--capi-monte);
+  --warning: var(--capi-manteca); /* fill only, with ink text */
+  --danger: #9e1b32;
+
+  /* Type */
+  --font-titles: "Rubik", system-ui, sans-serif;
+  --font-text: "Nunito", system-ui, sans-serif;
+  --font-data: "Ubuntu Mono", ui-monospace, monospace;
+  --font-comms: "Sour Gummy", "Nunito", sans-serif; /* marketing and mascot voice only */
+}
+
+[data-theme="dark"] {
+  --surface: #1a1612;
+  --surface-raised: #26201a;
+  --border: #3a3128;
+  --ink: #fff3e3;
+  --ink-muted: #bfaf9c;
+  --brand: var(--capi-mandarina);
+  --on-brand: #1a1612;
+  --brand-text: #ff8a33;
+  --success: #6cc49a;
+  --warning: var(--capi-manteca);
+  --danger: #ff6b7f;
+}
+
+/* Type scale: size / line height / weight / tracking */
+.capi-display { font: 700 84px/1 var(--font-titles); letter-spacing: -2.5px; }
+.capi-h1 { font: 700 54px/1.05 var(--font-titles); letter-spacing: -1.2px; }
+.capi-h2 { font: 600 36px/1.15 var(--font-titles); letter-spacing: -0.4px; }
+.capi-h3 { font: 500 24px/1.25 var(--font-titles); }
+.capi-body { font: 400 18px/1.6 var(--font-text); }
+.capi-small { font: 600 15px/1.45 var(--font-text); color: var(--ink-muted); }
+.capi-label { font: 800 13px/1.2 var(--font-text); letter-spacing: 1.5px; text-transform: uppercase; color: var(--brand-text); }
+.capi-data { font: 400 17px/1.35 var(--font-data); font-variant-numeric: tabular-nums; }
