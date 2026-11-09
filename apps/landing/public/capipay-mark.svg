@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 24 96 44" role="img" aria-label="CapiPay">
+  <defs><mask id="eye"><rect x="0" y="0" width="100" height="100" fill="#fff"/><circle cx="61" cy="45" r="5.5" fill="#000"/></mask></defs>
+  <g fill="#241F1A" mask="url(#eye)"><circle cx="36" cy="34" r="8"/><path d="M20 62 V54 A22 22 0 0 1 42 32 H70 A12 12 0 0 1 82 44 V62 Z"/></g>
+  <line x1="8" y1="62" x2="92" y2="62" stroke="#241F1A" stroke-width="12" stroke-linecap="round"/>
+</svg>
