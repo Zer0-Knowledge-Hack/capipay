@@ -123,10 +123,15 @@ Boards: [`04-ornaments-static.png`](boards/04-ornaments-static.png), [`05-orname
 
 ## 6. Voice
 
-- **Plain and calm.** Say what happened and what to do next ("Recibimos 13.00 de 18.00 USDC. El comprador puede completar con el mismo memo.").
-- **The promise:** "Cobra en USDC. Tu negocio sigue solo." **The proof:** "Sin comprobantes falsos."
-- **Neutral Latin American Spanish.** Address the reader as *tú* ("Cobra", "Comparte", "Puedes"). No voseo and no regional slang: *falso*, not *trucho*; *dinero*, not *plata*. Copy must read the same in Mexico, Peru, Bolivia or Argentina.
-- **Product copy is in Spanish.** Code, tokens and technical docs are in English.
+- **Plain and calm.** Say what happened and what to do next ("We received 13.00 of 18.00 USDC. The buyer can top up with the same memo.").
+- **The promise:** "Get paid in USDC. Your business keeps going." **The proof:** "No more fake receipts."
+- **Languages.** English is the master copy. Customer-facing copy also ships in Spanish and Brazilian Portuguese. Everything else in the repo (code, tokens, docs) is English only.
+
+| Language | Rules | Promise |
+|---|---|---|
+| English (`en`) | Master copy. Short sentences, second person | Get paid in USDC. Your business keeps going. |
+| Spanish (`es`) | Neutral Latin American Spanish with *tú*. No voseo and no regional slang (*falso*, not *trucho*; *dinero*, not *plata*). Must read the same in Mexico, Peru, Bolivia or Argentina | Cobra en USDC. Tu negocio sigue solo. |
+| Portuguese (`pt-BR`) | Brazilian Portuguese with *você*. Informal but not slangy | Receba em USDC. Seu negócio segue sozinho. |
 
 ## 7. Applications
 
@@ -149,7 +154,7 @@ The mockups use real product rules from [`../product-definition.md`](../product-
 - [ ] Sour Gummy appears only in marketing, never in product UI.
 - [ ] Every payment state shows a word, not just a color or an ornament.
 - [ ] No "CP" monogram, no capybara character.
-- [ ] Copy uses *tú*, with no voseo and no regional slang.
+- [ ] Spanish copy uses *tú*, with no voseo and no regional slang. Portuguese copy uses *você*.
 
 ## Open items
 

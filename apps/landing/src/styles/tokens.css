@@ -1,0 +1,38 @@
+/* CapiPay brand tokens, copied from docs/brand/tokens.css (the source of truth).
+   Fonts are loaded in index.html; Sour Gummy is not used on the landing. */
+
+:root {
+  /* Core palette: Mandarina */
+  --capi-mandarina: #ff7a1a; /* the sun, primary actions. Never as text on crema */
+  --capi-monte: #1f4d3a; /* water, depth, verified */
+  --capi-manteca: #ffd45c; /* light on the water, highlights. Never as text */
+  --capi-tinta: #241f1a; /* text, logo */
+  --capi-crema: #fff7ec; /* ground */
+
+  /* Functional tokens: light theme */
+  --surface: var(--capi-crema);
+  --surface-raised: #ffffff;
+  --border: #eadbc8;
+  --ink: var(--capi-tinta);
+  --ink-muted: #6b5e50;
+  --brand: var(--capi-mandarina);
+  --on-brand: var(--capi-tinta);
+  --brand-text: #b84a00; /* orange that passes 4.5:1 on crema */
+  --success: var(--capi-monte);
+  --warning: var(--capi-manteca); /* fill only, with ink text */
+  --danger: #9e1b32;
+
+  /* Dark theme values, used by the dark sections (developers, footer) */
+  --dark-surface: #1a1612;
+  --dark-surface-raised: #26201a;
+  --dark-border: #3a3128;
+  --dark-ink: #fff3e3;
+  --dark-ink-muted: #bfaf9c;
+  --dark-brand-text: #ff8a33;
+  --dark-success: #6cc49a;
+
+  /* Type */
+  --font-titles: "Rubik", system-ui, sans-serif;
+  --font-text: "Nunito", system-ui, sans-serif;
+  --font-data: "Ubuntu Mono", ui-monospace, monospace;
+}
